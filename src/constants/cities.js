@@ -1,0 +1,18 @@
+export const CITIES = [
+  "Addis Ababa",
+  "Adama",
+  "Bahir Dar",
+  "Bishoftu",
+  "Dessie",
+  "Dire Dawa",
+  "Debre Birhan",
+  "Gambella",
+  "Gondar",
+  "Harar",
+  "Hawassa",
+  "Hosaena",
+  "Jimma",
+  "Jijiga",
+  "Mekele",
+  "Shashemene",
+];

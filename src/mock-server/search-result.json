@@ -1,0 +1,38 @@
+[
+    {
+      "job_title": "Customer Service Representative",
+      "company": "GlobeDoc Educational Consultancy PLC",
+      "job_description": "Develop and maintain software applications.",
+      "job_type": "Full-time",
+      "location": "Addis Ababa"
+    },
+    {
+      "job_title": "full stack developer",
+      "company": "Merq Consultancy",
+      "job_description": "Analyze and interpret data to identify trends and patterns.",
+      "job_type": "Full-time",
+      "location": "Menlo Park, CA"
+    },
+    {
+      "job_title": "Product Manager",
+      "company": "Chapa Financial Technologies S.C",
+      "job_description": "Manage the development and launch of new products.",
+      "job_type": "Full-time",
+      "location": "Seattle, WA"
+    },
+    {
+      "job_title": "Marketing Manager",
+      "company": "Microsoft",
+      "job_description": "Develop and execute marketing campaigns.",
+      "job_type": "Full-time",
+      "location": "Redmond, WA"
+    },
+    {
+      "job_title": "Sales Manager",
+      "company": "Apple",
+      "job_description": "Manage a team of sales representatives.",
+      "job_type": "Full-time",
+      "location": "Cupertino, CA"
+    }
+]
+
