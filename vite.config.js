@@ -10,7 +10,7 @@ export default defineConfig({
     react(),
     // basicSsl()
   ],
-
+ 
   // server: {
   //   host: true
   // }

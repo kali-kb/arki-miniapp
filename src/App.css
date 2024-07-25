@@ -12,6 +12,18 @@
   height: 100vh;
 }
 
+.relative textarea {
+  padding-bottom: 2rem; /* Add padding to avoid overlap with counter */
+}
+.char-counter {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  font-size: 0.875rem; /* text-sm */
+  color: white; /* text-gray-600 */
+}
+
+
 input {
   color:white;
 }

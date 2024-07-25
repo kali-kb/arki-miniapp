@@ -1,14 +1,26 @@
 import { useState } from "react"
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1322133239.
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:1400375545.
-export const FileUploader = () => {
+export const FileUploader = ({name, handleCompanyLogoChange}) => {
   const [selectedFile, setSelectedFile] = useState(null);
+  
+
+
+  const handleChange = (e) => {
+    console.log("file: ", e.target.files)
+    setSelectedFile(e.target.files[0]);
+    handleCompanyLogoChange(e)
+  }
+
+
   return (
-    <div className="relative inline-block">
+    <div className="relative w-[fit-content] inline-block">
       <input
         type="file"
         id="file"
-        onChange={(e) => setSelectedFile(e.target.files[0])}
+        name="companyLogo"
+        // onChange={(e) => setSelectedFile(e.target.files[0])}
+        onChange={(e) => handleChange(e)}
         className="absolute inset-0 h-full w-full cursor-pointer opacity-0"
       />
       <label

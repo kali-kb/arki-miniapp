@@ -10,25 +10,14 @@ import {
   createBrowserNavigatorFromLocation,
 } from "@telegram-apps/sdk";
 import { initHapticFeedback } from '@telegram-apps/sdk';
-
 import { initNavigator } from "@telegram-apps/sdk-react";
 import { request } from '@telegram-apps/sdk';
-
-
 import { Link } from "react-router-dom";
 import data from "../mock-server/search-result.json";
 
 function JobSearchPage() {
   // const navigator = useMemo(() => initNavigator('app-navigation-state'), [])
   const navigator = new BrowserNavigator(["/"], 0);
-
-
-  const closeMiniapp = async() => {
-    const result = await request({
-      method: 'web_app_open_scan_qr_popup',
-      event: ['qr_text_received', 'scan_qr_popup_closed'],
-    });
-  }
 
 
   useEffect(() => {
@@ -40,7 +29,7 @@ function JobSearchPage() {
     <>
       <div className="">
         <div className="flex gap-3 bg-[#212332] items-center">
-          <button onClick={closeMiniapp}>Do thingss</button>
+          {/* <button onClick={closeMiniapp}>Do thingss</button> */}
           <Link to="/employer-type">
             <p>Hello</p>
           </Link>

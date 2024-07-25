@@ -1,10 +1,11 @@
 /* eslint-disable react/prop-types */
 // import { useState, useEffect } from "react";
 
-export const DropDown = ({ list, defaultValue, selectedType, setSelectedType, isDropDownVisible, setDropDownVisible }) => {
+export const DropDown = ({ errors, list, defaultValue, selectedType, setSelectedType, isDropDownVisible, setDropDownVisible }) => {
 
   const onSelectAction = (item) => {
     setSelectedType(item) 
+    console.log("chosen item:", item)
     setDropDownVisible(false)
   }
 
@@ -15,7 +16,7 @@ export const DropDown = ({ list, defaultValue, selectedType, setSelectedType, is
           <button
             onClick={() => setDropDownVisible(!isDropDownVisible)}
             type="button"
-            className="inline-flex justify-between w-full rounded-xl border border-none shadow-sm active:outline-none px-4 py-2 bg-gray-700 text-sm font-medium text-white hover:bg-gray-700 focus:bg-gray-700 focus:outline-none"
+            className={`inline-flex justify-between w-full ${errors && 'ring-1 ring-red-500'} rounded-xl border border-none shadow-sm active:outline-none px-4 py-2 bg-gray-700 text-sm font-medium text-white hover:bg-gray-700 focus:bg-gray-700 focus:outline-none`}
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -38,7 +39,7 @@ export const DropDown = ({ list, defaultValue, selectedType, setSelectedType, is
         </div>
         {isDropDownVisible && (
           <div
-            className="origin-top-right absolute z-40 right-0 h-[150px] mt-2 w-full rounded-xl shadow-lg ring-1 bg-gray-700 ring-black overflow-y-scroll ring-opacity-5 focus:outline-none scrollbar-hide"
+            className="origin-top-right mb-2 absolute z-40 right-0 h-[150px] mt-2 w-full rounded-xl shadow-lg ring-1 bg-gray-700 ring-black overflow-y-scroll ring-opacity-5 focus:outline-none scrollbar-hide"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="menu-button"
